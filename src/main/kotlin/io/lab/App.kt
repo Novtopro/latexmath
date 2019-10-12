@@ -15,6 +15,7 @@ import java.nio.charset.StandardCharsets
 
 fun main(args: Array<String>) {
     val app = Javalin.create().start(8080)
+
     app.get("/") { ctx ->
         ctx.contentType("image/svg+xml")
 
