@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
 
         val expression = ctx.req.getParameter("exp")
         val teXFormula = TeXFormula(expression)
-        val teXIcon = teXFormula.createTeXIcon(TeXConstants.STYLE_TEXT, 32f)
+        val teXIcon = teXFormula.createTeXIcon(TeXConstants.STYLE_TEXT, 24f)
 
         val document = SVGDOMImplementation.getDOMImplementation().createDocument(SVGDOMImplementation.SVG_NAMESPACE_URI, "svg", null)
 
